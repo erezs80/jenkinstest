@@ -1,7 +1,6 @@
 #!/bin/bash
-set -e
 $file=/var/lib/jenkins/counter.log
-if [[ ! -e $file ]]; then
+if [[ ! -f $file ]]; then
 	echo "0" > /var/lib/jenkins/counter.log
 else
 	counter=`cat /var/lib/jenkins/counter.log`
