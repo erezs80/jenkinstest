@@ -1,5 +1,5 @@
 #!/bin/bash
-$file=/var/lib/jenkins/counter.log
+file=/var/lib/jenkins/counter.log
 if [[ ! -f $file ]]; then
 	echo "0" > /var/lib/jenkins/counter.log
 else
